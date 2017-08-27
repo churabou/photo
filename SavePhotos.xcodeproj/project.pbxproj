@@ -20,6 +20,8 @@
 		C9AE4B241F529E9F0077F3DF /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE4B231F529E9F0077F3DF /* NibLoadable.swift */; };
 		C9AE4B261F529F910077F3DF /* InstaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9AE4B251F529F910077F3DF /* InstaView.xib */; };
 		C9AE4B2A1F52A0250077F3DF /* InstaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE4B291F52A0250077F3DF /* InstaView.swift */; };
+		C9AE4B2C1F52A8D20077F3DF /* AlbumDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AE4B2B1F52A8D20077F3DF /* AlbumDetailViewController.storyboard */; };
+		C9AE4B2E1F52A8EF0077F3DF /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE4B2D1F52A8EF0077F3DF /* AlbumDetailViewController.swift */; };
 		C9EAB91C1EE816E000A630FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EAB91B1EE816E000A630FE /* AppDelegate.swift */; };
 		C9EAB91E1EE816E000A630FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EAB91D1EE816E000A630FE /* ViewController.swift */; };
 		C9EAB9231EE816E000A630FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EAB9221EE816E000A630FE /* Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		C9AE4B231F529E9F0077F3DF /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NibLoadable.swift; path = Protocol/NibLoadable.swift; sourceTree = "<group>"; };
 		C9AE4B251F529F910077F3DF /* InstaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InstaView.xib; path = Post/InstaView.xib; sourceTree = "<group>"; };
 		C9AE4B291F52A0250077F3DF /* InstaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstaView.swift; path = Post/InstaView.swift; sourceTree = "<group>"; };
+		C9AE4B2B1F52A8D20077F3DF /* AlbumDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AlbumDetailViewController.storyboard; path = Album/AlbumDetailViewController.storyboard; sourceTree = "<group>"; };
+		C9AE4B2D1F52A8EF0077F3DF /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
 		C9EAB9181EE816E000A630FE /* SavePhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavePhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EAB91B1EE816E000A630FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9EAB91D1EE816E000A630FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,8 +134,10 @@
 		C90F85781F52982C006D7736 /* Album */ = {
 			isa = PBXGroup;
 			children = (
-				C90F85721F52918C006D7736 /* AlbumViewController.swift */,
 				C90F85761F529826006D7736 /* AlbumViewController.storyboard */,
+				C90F85721F52918C006D7736 /* AlbumViewController.swift */,
+				C9AE4B2B1F52A8D20077F3DF /* AlbumDetailViewController.storyboard */,
+				C9AE4B2D1F52A8EF0077F3DF /* AlbumDetailViewController.swift */,
 			);
 			name = Album;
 			sourceTree = "<group>";
@@ -317,6 +323,7 @@
 				C90F85641F528FCD006D7736 /* SettingViewController.storyboard in Resources */,
 				C9EAB9231EE816E000A630FE /* Assets.xcassets in Resources */,
 				C90F85771F529826006D7736 /* AlbumViewController.storyboard in Resources */,
+				C9AE4B2C1F52A8D20077F3DF /* AlbumDetailViewController.storyboard in Resources */,
 				C9AE4B261F529F910077F3DF /* InstaView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +352,7 @@
 				C90F85731F52918C006D7736 /* AlbumViewController.swift in Sources */,
 				C9EAB91E1EE816E000A630FE /* ViewController.swift in Sources */,
 				C9AE4B2A1F52A0250077F3DF /* InstaView.swift in Sources */,
+				C9AE4B2E1F52A8EF0077F3DF /* AlbumDetailViewController.swift in Sources */,
 				C9EAB91C1EE816E000A630FE /* AppDelegate.swift in Sources */,
 				C9AE4B241F529E9F0077F3DF /* NibLoadable.swift in Sources */,
 				C90F85681F52901A006D7736 /* HomeViewController.swift in Sources */,

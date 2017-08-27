@@ -36,11 +36,12 @@ class HomeViewController: UITabBarController {
 //        mypageViewController.title = "マイページ"
 //        mypageViewController.tabBarItem = UITabBarItem(title: "マイページ", image: UIImage(named: "account"), selectedImage: UIImage(named: "account"))
         
-        
-        let albumViewController = AlbumViewController.instantiateFromStoryboard()
-        albumViewController.tabBarItem = UITabBarItem(title: "アルバム", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
-        
 
+        
+        let albumViewController = UINavigationController(rootViewController: AlbumViewController.instantiateFromStoryboard())
+        albumViewController.tabBarItem = UITabBarItem(title: "アルバム", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
+
+        
         let postViewController = PostViewController.instantiateFromStoryboard()
         postViewController.tabBarItem = UITabBarItem(title: "ダイアリー", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
         
