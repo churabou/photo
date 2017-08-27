@@ -9,15 +9,15 @@
 import UIKit
 
 class AlbumViewController: UIViewController {
-
+    
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
-         //ナビゲーションバーを非表示にする。
-         self.navigationController?.setNavigationBarHidden(true, animated: false)    }
+        //ナビゲーションバーを非表示にする。
+        self.navigationController?.setNavigationBarHidden(true, animated: false)    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -34,8 +34,15 @@ class AlbumViewController: UIViewController {
             self.collectionView.register(AlbumCollectionViewCell.self)
         }
     }
-
-
+    
+    @IBAction func hoge(_ sender: Any) {
+        
+        let picker = ImagePickerViewController.instantiateFromStoryboard()
+        present(picker, animated: true, completion: nil)
+    }
+    
+    
+    
 }
 
 
