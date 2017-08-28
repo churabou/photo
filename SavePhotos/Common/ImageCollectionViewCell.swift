@@ -23,11 +23,13 @@ class ImageCollectionViewCell: UICollectionViewCell, Reusable, NibLoadable {
     var asset:PHAsset? {
         
         didSet {
-            print("index")
+            
             guard  let asset = self.asset else {
                 return
             }
-          self.imageView.image = getAssetThumbnail(asset: asset).cropping()
+          //self.imageView.image = getAssetThumbnail(asset: asset).cropping()
+            
+          imageii(asset:asset)
         }
     
     }
@@ -46,6 +48,18 @@ class ImageCollectionViewCell: UICollectionViewCell, Reusable, NibLoadable {
         return thumbnail
     }
     
+    func imageii(asset:PHAsset){
+        
+        let manager: PHImageManager = PHImageManager()
+        manager.requestImage(for: asset,
+                             targetSize: CGSize(width:70, height:70),
+                                     contentMode: .aspectFill,
+                                     options: nil) { (image, info) -> Void in
+                                        self.imageView.image = image
+                                        // 取得したimageをUIImageViewなどで表示する
+                                        print("index")
+        }
+    }
     //@IBOutlet private dynamic weak var imageView: UIImageView!
     
 }
