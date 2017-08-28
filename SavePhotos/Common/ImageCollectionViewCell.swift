@@ -27,7 +27,7 @@ class ImageCollectionViewCell: UICollectionViewCell, Reusable, NibLoadable {
             guard  let asset = self.asset else {
                 return
             }
-          self.imageView.image = getAssetThumbnail(asset: asset).cropThumbnailImage(w: 100, h: 100)
+          self.imageView.image = getAssetThumbnail(asset: asset).cropping()
         }
     
     }

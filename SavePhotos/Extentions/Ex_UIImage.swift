@@ -43,4 +43,37 @@ extension UIImage {
         
         return cropImage
     }
+    
+       
+    func cropping() -> UIImage? {
+        
+        // リサイズ処理
+        let origRef    = self.cgImage
+        let origWidth  = CGFloat(origRef!.width)
+        let origHeight = CGFloat(origRef!.height)
+        var square:CGFloat = 0
+        
+        if (origWidth < origHeight) {
+            square = origWidth
+        } else {
+            square = origHeight
+        }
+        
+        let to = CGRect(x: (origWidth-square)/2, y: (origHeight-square)*1/4, width: square/2, height: square/2)
+        var opaque = false
+        if let cgImage = cgImage {
+            switch cgImage.alphaInfo {
+            case .noneSkipLast, .noneSkipFirst:
+                opaque = true
+            default:
+                break
+            }
+        }
+        print(square)
+        UIGraphicsBeginImageContextWithOptions(to.size, opaque, scale)
+        draw(at: CGPoint(x: -to.origin.x, y: -to.origin.y))
+        let result = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return result
+    }
 }
