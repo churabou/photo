@@ -21,8 +21,9 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bim-HK-rnz">
                         <rect key="frame" x="0.0" y="0.0" width="114" height="108"/>
                     </imageView>
-                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="check" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9W-Vd-F2z">
-                        <rect key="frame" x="67" y="0.0" width="47" height="21"/>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="check" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9W-Vd-F2z">
+                        <rect key="frame" x="0.0" y="0.0" width="47" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="1" green="0.27470855929999999" blue="0.3875518007" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -30,11 +31,9 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="Y9W-Vd-F2z" firstAttribute="top" secondItem="QIL-7V-5in" secondAttribute="top" id="Fj6-rA-VTO"/>
                 <constraint firstAttribute="trailing" secondItem="Bim-HK-rnz" secondAttribute="trailing" id="Vhc-Wn-VTd"/>
                 <constraint firstItem="Bim-HK-rnz" firstAttribute="top" secondItem="QIL-7V-5in" secondAttribute="top" id="cL6-KR-IDt"/>
                 <constraint firstItem="Bim-HK-rnz" firstAttribute="leading" secondItem="QIL-7V-5in" secondAttribute="leading" id="ddd-K4-79u"/>
-                <constraint firstAttribute="trailing" secondItem="Y9W-Vd-F2z" secondAttribute="trailing" id="lMD-fR-REf"/>
                 <constraint firstAttribute="bottom" secondItem="Bim-HK-rnz" secondAttribute="bottom" id="oIG-fD-Rho"/>
             </constraints>
             <size key="customSize" width="114" height="108"/>
