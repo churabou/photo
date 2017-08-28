@@ -14,11 +14,7 @@ class WriteViewController: UIViewController {
     
     var assets:[PHAsset] = [] {
         didSet {
-            print("did set in write vidw ")
-            print(assets.count)
            self.collectionView.reloadData()
-   
-
         }
     }
     
@@ -72,7 +68,6 @@ extension WriteViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
         return self.assets.count
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

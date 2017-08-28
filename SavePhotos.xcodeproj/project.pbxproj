@@ -31,6 +31,7 @@
 		C9AE4B411F52E5D40077F3DF /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE4B401F52E5D40077F3DF /* ImageCollectionViewCell.swift */; };
 		C9AE4B451F52F6A80077F3DF /* Ex_UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE4B441F52F6A80077F3DF /* Ex_UIImage.swift */; };
 		C9BB55DD1F53CDC30080ECE9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB55DC1F53CDC30080ECE9 /* Helper.swift */; };
+		C9BB55DF1F53E6710080ECE9 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB55DE1F53E6710080ECE9 /* WriteViewController.swift */; };
 		C9EAB91C1EE816E000A630FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EAB91B1EE816E000A630FE /* AppDelegate.swift */; };
 		C9EAB91E1EE816E000A630FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EAB91D1EE816E000A630FE /* ViewController.swift */; };
 		C9EAB9231EE816E000A630FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EAB9221EE816E000A630FE /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 		C9AE4B401F52E5D40077F3DF /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCollectionViewCell.swift; path = Common/ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		C9AE4B441F52F6A80077F3DF /* Ex_UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ex_UIImage.swift; path = Extentions/Ex_UIImage.swift; sourceTree = "<group>"; };
 		C9BB55DC1F53CDC30080ECE9 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = Home/Helper.swift; sourceTree = "<group>"; };
+		C9BB55DE1F53E6710080ECE9 /* WriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WriteViewController.swift; path = Post/WriteViewController.swift; sourceTree = "<group>"; };
 		C9EAB9181EE816E000A630FE /* SavePhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavePhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EAB91B1EE816E000A630FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9EAB91D1EE816E000A630FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				C90F85651F528FF8006D7736 /* PostViewController.storyboard */,
+				C9BB55DE1F53E6710080ECE9 /* WriteViewController.swift */,
 				C90F856B1F529046006D7736 /* PostViewController.swift */,
 				C9AE4B251F529F910077F3DF /* InstaView.xib */,
 				C9AE4B291F52A0250077F3DF /* InstaView.swift */,
@@ -419,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9BB55DF1F53E6710080ECE9 /* WriteViewController.swift in Sources */,
 				C90F85731F52918C006D7736 /* AlbumViewController.swift in Sources */,
 				C9AE4B371F52BDBE0077F3DF /* AlbumCollectionViewCell.swift in Sources */,
 				C9AE4B301F52B9C60077F3DF /* Ex_CollectionView.swift in Sources */,

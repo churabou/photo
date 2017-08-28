@@ -14,11 +14,6 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.cyan
         
-//        let v = InstaView.instantiateFromNib()
-//        self.view.addSubview(v)
-//        print(v.bounds)
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

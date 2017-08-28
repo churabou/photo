@@ -22,10 +22,10 @@ class ImagePickerViewController: UIViewController {
     fileprivate var AssetsInCamerRoll:[PHAsset] {
         return Helper.AssetsInCameraRoll
     }
+    
     private var photoAssets:[PHAsset] = []
     
-
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if AssetsInCamerRoll.isEmpty{

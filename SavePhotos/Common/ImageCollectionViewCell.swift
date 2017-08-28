@@ -31,13 +31,12 @@ class ImageCollectionViewCell: UICollectionViewCell, Reusable, NibLoadable {
     var asset:PHAsset? {
         
         didSet {
-             print("did set phasset in cell")
+            
             guard  let asset = self.asset else {
                 return
             }
-            print("possibirity odf return")
           //self.imageView.image = getAssetThumbnail(asset: asset).cropping()
-            
+
           imageii(asset:asset)
         }
     
