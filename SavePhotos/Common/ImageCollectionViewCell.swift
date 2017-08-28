@@ -18,7 +18,15 @@ class ImageCollectionViewCell: UICollectionViewCell, Reusable, NibLoadable {
         super.awakeFromNib()
     }
     
+    
+    @IBOutlet private weak var label: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    
+    override var isSelected:Bool {
+        didSet {
+           self.label.isHidden = !isSelected
+        }
+    }
     
     var asset:PHAsset? {
         

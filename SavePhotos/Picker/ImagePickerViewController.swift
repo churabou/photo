@@ -23,6 +23,7 @@ class ImagePickerViewController: UIViewController {
         if AssetsInCamerRoll.isEmpty{
             libraryRequestAuthorization()
         }
+       // self.collectionView.reloadData()
 
         // Do any additional setup after loading the view.
     }
@@ -37,6 +38,7 @@ class ImagePickerViewController: UIViewController {
         didSet{
             self.collectionView.delegate = self
             self.collectionView.dataSource = self
+            self.collectionView.allowsMultipleSelection = true
             self.collectionView.register(ImageCollectionViewCell.self)
         }
     }
@@ -118,13 +120,15 @@ class ImagePickerViewController: UIViewController {
 extension ImagePickerViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return AssetsInCamerRoll.count
+       // return 10
+      return AssetsInCamerRoll.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell: ImageCollectionViewCell  = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.asset = AssetsInCamerRoll[indexPath.row]
+        //cell.imageView.image = UIImage(named: "chura0")
         return cell
     }
 }
@@ -148,6 +152,7 @@ extension ImagePickerViewController: UICollectionViewDelegate {
     //クリックイベント
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.item)
+        //self.collectionView
     }
 }
 
