@@ -22,6 +22,15 @@
 		C9AE4B2A1F52A0250077F3DF /* InstaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE4B291F52A0250077F3DF /* InstaView.swift */; };
 		C9AE4B2C1F52A8D20077F3DF /* AlbumDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AE4B2B1F52A8D20077F3DF /* AlbumDetailViewController.storyboard */; };
 		C9AE4B2E1F52A8EF0077F3DF /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE4B2D1F52A8EF0077F3DF /* AlbumDetailViewController.swift */; };
+		C9AE4B301F52B9C60077F3DF /* Ex_CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE4B2F1F52B9C60077F3DF /* Ex_CollectionView.swift */; };
+		C9AE4B351F52BDAE0077F3DF /* AlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9AE4B341F52BDAE0077F3DF /* AlbumCollectionViewCell.xib */; };
+		C9AE4B371F52BDBE0077F3DF /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE4B361F52BDBE0077F3DF /* AlbumCollectionViewCell.swift */; };
+		C9AE4B3A1F52E0F90077F3DF /* ImagePickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AE4B391F52E0F90077F3DF /* ImagePickerViewController.storyboard */; };
+		C9AE4B3C1F52E1120077F3DF /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE4B3B1F52E1120077F3DF /* ImagePickerViewController.swift */; };
+		C9AE4B3F1F52E5BD0077F3DF /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9AE4B3E1F52E5BD0077F3DF /* ImageCollectionViewCell.xib */; };
+		C9AE4B411F52E5D40077F3DF /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE4B401F52E5D40077F3DF /* ImageCollectionViewCell.swift */; };
+		C9AE4B451F52F6A80077F3DF /* Ex_UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE4B441F52F6A80077F3DF /* Ex_UIImage.swift */; };
+		C9BB55DD1F53CDC30080ECE9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB55DC1F53CDC30080ECE9 /* Helper.swift */; };
 		C9EAB91C1EE816E000A630FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EAB91B1EE816E000A630FE /* AppDelegate.swift */; };
 		C9EAB91E1EE816E000A630FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EAB91D1EE816E000A630FE /* ViewController.swift */; };
 		C9EAB9231EE816E000A630FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EAB9221EE816E000A630FE /* Assets.xcassets */; };
@@ -63,6 +72,15 @@
 		C9AE4B291F52A0250077F3DF /* InstaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstaView.swift; path = Post/InstaView.swift; sourceTree = "<group>"; };
 		C9AE4B2B1F52A8D20077F3DF /* AlbumDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AlbumDetailViewController.storyboard; path = Album/AlbumDetailViewController.storyboard; sourceTree = "<group>"; };
 		C9AE4B2D1F52A8EF0077F3DF /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		C9AE4B2F1F52B9C60077F3DF /* Ex_CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ex_CollectionView.swift; path = Extentions/Ex_CollectionView.swift; sourceTree = "<group>"; };
+		C9AE4B341F52BDAE0077F3DF /* AlbumCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AlbumCollectionViewCell.xib; path = Album/AlbumCollectionViewCell.xib; sourceTree = "<group>"; };
+		C9AE4B361F52BDBE0077F3DF /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumCollectionViewCell.swift; path = Album/AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9AE4B391F52E0F90077F3DF /* ImagePickerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ImagePickerViewController.storyboard; path = Picker/ImagePickerViewController.storyboard; sourceTree = "<group>"; };
+		C9AE4B3B1F52E1120077F3DF /* ImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePickerViewController.swift; path = Picker/ImagePickerViewController.swift; sourceTree = "<group>"; };
+		C9AE4B3E1F52E5BD0077F3DF /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageCollectionViewCell.xib; path = Common/ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		C9AE4B401F52E5D40077F3DF /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCollectionViewCell.swift; path = Common/ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9AE4B441F52F6A80077F3DF /* Ex_UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ex_UIImage.swift; path = Extentions/Ex_UIImage.swift; sourceTree = "<group>"; };
+		C9BB55DC1F53CDC30080ECE9 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = Home/Helper.swift; sourceTree = "<group>"; };
 		C9EAB9181EE816E000A630FE /* SavePhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavePhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EAB91B1EE816E000A630FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9EAB91D1EE816E000A630FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,8 +154,8 @@
 			children = (
 				C90F85761F529826006D7736 /* AlbumViewController.storyboard */,
 				C90F85721F52918C006D7736 /* AlbumViewController.swift */,
-				C9AE4B2B1F52A8D20077F3DF /* AlbumDetailViewController.storyboard */,
-				C9AE4B2D1F52A8EF0077F3DF /* AlbumDetailViewController.swift */,
+				C9AE4B341F52BDAE0077F3DF /* AlbumCollectionViewCell.xib */,
+				C9AE4B361F52BDBE0077F3DF /* AlbumCollectionViewCell.swift */,
 			);
 			name = Album;
 			sourceTree = "<group>";
@@ -150,6 +168,57 @@
 				C9AE4B1F1F529E670077F3DF /* Reusable.swift */,
 			);
 			name = Protocol;
+			sourceTree = "<group>";
+		};
+		C9AE4B311F52B9CD0077F3DF /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C9AE4B2F1F52B9C60077F3DF /* Ex_CollectionView.swift */,
+				C9AE4B441F52F6A80077F3DF /* Ex_UIImage.swift */,
+			);
+			name = Extentions;
+			sourceTree = "<group>";
+		};
+		C9AE4B381F52D85A0077F3DF /* AlbumDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C9AE4B2B1F52A8D20077F3DF /* AlbumDetailViewController.storyboard */,
+				C9AE4B2D1F52A8EF0077F3DF /* AlbumDetailViewController.swift */,
+			);
+			name = AlbumDetail;
+			sourceTree = "<group>";
+		};
+		C9AE4B3D1F52E11D0077F3DF /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C9AE4B391F52E0F90077F3DF /* ImagePickerViewController.storyboard */,
+				C9AE4B3B1F52E1120077F3DF /* ImagePickerViewController.swift */,
+			);
+			name = ImagePicker;
+			sourceTree = "<group>";
+		};
+		C9AE4B421F52E5E10077F3DF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C9AE4B3E1F52E5BD0077F3DF /* ImageCollectionViewCell.xib */,
+				C9AE4B401F52E5D40077F3DF /* ImageCollectionViewCell.swift */,
+				C9BB55DC1F53CDC30080ECE9 /* Helper.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		C9AE4B431F52E6270077F3DF /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				C90F856D1F529077006D7736 /* Home */,
+				C90F85781F52982C006D7736 /* Album */,
+				C9AE4B381F52D85A0077F3DF /* AlbumDetail */,
+				C9AE4B3D1F52E11D0077F3DF /* ImagePicker */,
+				C90F856F1F52908C006D7736 /* Post */,
+				C90F856E1F529082006D7736 /* Setting */,
+				C9AE4B421F52E5E10077F3DF /* Common */,
+			);
+			name = Scene;
 			sourceTree = "<group>";
 		};
 		C9EAB90F1EE816E000A630FE = {
@@ -180,11 +249,9 @@
 				C9EAB9221EE816E000A630FE /* Assets.xcassets */,
 				C9EAB9241EE816E000A630FE /* LaunchScreen.storyboard */,
 				C9EAB9271EE816E000A630FE /* Info.plist */,
+				C9AE4B311F52B9CD0077F3DF /* Extentions */,
 				C90F85791F529873006D7736 /* Protocol */,
-				C90F856D1F529077006D7736 /* Home */,
-				C90F85781F52982C006D7736 /* Album */,
-				C90F856F1F52908C006D7736 /* Post */,
-				C90F856E1F529082006D7736 /* Setting */,
+				C9AE4B431F52E6270077F3DF /* Scene */,
 			);
 			path = SavePhotos;
 			sourceTree = "<group>";
@@ -324,7 +391,10 @@
 				C9EAB9231EE816E000A630FE /* Assets.xcassets in Resources */,
 				C90F85771F529826006D7736 /* AlbumViewController.storyboard in Resources */,
 				C9AE4B2C1F52A8D20077F3DF /* AlbumDetailViewController.storyboard in Resources */,
+				C9AE4B3F1F52E5BD0077F3DF /* ImageCollectionViewCell.xib in Resources */,
+				C9AE4B351F52BDAE0077F3DF /* AlbumCollectionViewCell.xib in Resources */,
 				C9AE4B261F529F910077F3DF /* InstaView.xib in Resources */,
+				C9AE4B3A1F52E0F90077F3DF /* ImagePickerViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,9 +420,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C90F85731F52918C006D7736 /* AlbumViewController.swift in Sources */,
+				C9AE4B371F52BDBE0077F3DF /* AlbumCollectionViewCell.swift in Sources */,
+				C9AE4B301F52B9C60077F3DF /* Ex_CollectionView.swift in Sources */,
 				C9EAB91E1EE816E000A630FE /* ViewController.swift in Sources */,
+				C9AE4B411F52E5D40077F3DF /* ImageCollectionViewCell.swift in Sources */,
 				C9AE4B2A1F52A0250077F3DF /* InstaView.swift in Sources */,
 				C9AE4B2E1F52A8EF0077F3DF /* AlbumDetailViewController.swift in Sources */,
+				C9AE4B3C1F52E1120077F3DF /* ImagePickerViewController.swift in Sources */,
+				C9BB55DD1F53CDC30080ECE9 /* Helper.swift in Sources */,
+				C9AE4B451F52F6A80077F3DF /* Ex_UIImage.swift in Sources */,
 				C9EAB91C1EE816E000A630FE /* AppDelegate.swift in Sources */,
 				C9AE4B241F529E9F0077F3DF /* NibLoadable.swift in Sources */,
 				C90F85681F52901A006D7736 /* HomeViewController.swift in Sources */,

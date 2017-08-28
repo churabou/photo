@@ -11,12 +11,18 @@ import Photos
 
 class ImagePickerViewController: UIViewController {
     
-     var photoAssets: Array! = [PHAsset]()
+    fileprivate var AssetsInCamerRoll:[PHAsset] {
+        return Helper.AssetsInCameraRoll
+    }
+    private var photoAssets:[PHAsset] = []
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        libraryRequestAuthorization()
-
+        if AssetsInCamerRoll.isEmpty{
+            libraryRequestAuthorization()
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -27,11 +33,11 @@ class ImagePickerViewController: UIViewController {
     }
     
     @IBOutlet private dynamic weak var collectionView: UICollectionView! {
+        
         didSet{
             self.collectionView.delegate = self
             self.collectionView.dataSource = self
             self.collectionView.register(ImageCollectionViewCell.self)
-            
         }
     }
     
@@ -39,19 +45,6 @@ class ImagePickerViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    fileprivate func setup() {
-        collectionView.dataSource = self
-        
-        // UICollectionViewCellのマージン等の設定
-        let flowLayout: UICollectionViewFlowLayout! = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width / 3 - 4,
-                                     height: UIScreen.main.bounds.width / 3 - 4)
-        flowLayout.sectionInset = UIEdgeInsets(top: 8, left: 0, bottom: 0, right: 0)
-        flowLayout.minimumInteritemSpacing = 0
-        flowLayout.minimumLineSpacing = 6
-        
-        collectionView.collectionViewLayout = flowLayout
-    }
     
     // カメラロールへのアクセス許可
     fileprivate func libraryRequestAuthorization() {
@@ -81,6 +74,7 @@ class ImagePickerViewController: UIViewController {
             }
             wself.photoAssets.append(asset as PHAsset)
         })
+        Helper.AssetsInCameraRoll = photoAssets
         collectionView.reloadData()
     }
     
@@ -114,6 +108,7 @@ class ImagePickerViewController: UIViewController {
     
     
 
+   
 }
 
 
@@ -123,14 +118,13 @@ class ImagePickerViewController: UIViewController {
 extension ImagePickerViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photoAssets.count
+        return AssetsInCamerRoll.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell: ImageCollectionViewCell  = collectionView.dequeueReusableCell(forIndexPath: indexPath)
-        cell.imageView.image = UIImage(named: "chura0")
-        cell.asset = self.photoAssets[indexPath.row]
+        cell.asset = AssetsInCamerRoll[indexPath.row]
         return cell
     }
 }

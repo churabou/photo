@@ -6,4 +6,11 @@
 //  Copyright © 2017年 ちゅーたつ. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import Photos
+
+class Helper {
+    
+    static var AssetsInCameraRoll:[PHAsset] = []
+
+}
