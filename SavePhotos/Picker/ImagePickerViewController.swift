@@ -11,6 +11,14 @@ import Photos
 
 class ImagePickerViewController: UIViewController {
     
+    
+    enum PickerOrigin{
+        case album
+        case diary
+    }
+    
+    var type:PickerOrigin?
+    
     fileprivate var AssetsInCamerRoll:[PHAsset] {
         return Helper.AssetsInCameraRoll
     }
@@ -46,6 +54,25 @@ class ImagePickerViewController: UIViewController {
     @IBAction func a(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func b(_ sender: UIButton) {
+        
+        let path = self.collectionView.indexPathsForSelectedItems
+        var asset:[PHAsset] = []
+        for i in path! {
+            asset.append(AssetsInCamerRoll[i.row])
+        }
+        print(asset)
+        if self.type == .diary {
+            let writeView = self.presentingViewController as! WriteViewController
+            dismiss(animated: true, completion: {
+                writeView.assets = asset
+            })
+        
+        }
+        
+    }
+    
     
     
     // カメラロールへのアクセス許可
