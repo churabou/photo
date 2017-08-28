@@ -16,12 +16,14 @@ class DialyTableViewCell: UITableViewCell, Reusable {
         didSet{
             
             print("hello wordl")
+            self.imageView?.image = dialy.images[0]
             self.textLabel?.text = dialy.title
 
         }
         
     }
     
+    @IBOutlet weak var thumbnailView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

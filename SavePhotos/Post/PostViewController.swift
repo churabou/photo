@@ -96,7 +96,7 @@ extension PostViewController: UITableViewDelegate {
         case .normal:
             return UIScreen.main.bounds.height - 50
         case.oneline:
-            return 70
+            return 100
         }
      
     }
