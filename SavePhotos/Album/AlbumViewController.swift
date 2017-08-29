@@ -10,6 +10,9 @@ import UIKit
 
 class AlbumViewController: UIViewController {
     
+
+    var creatingAlbumName = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -35,12 +38,51 @@ class AlbumViewController: UIViewController {
         }
     }
     
-    @IBAction func hoge(_ sender: Any) {
-        
-        let picker = ImagePickerViewController.instantiateFromStoryboard()
-        present(picker, animated: true, completion: nil)
+    open func reloadData(){
+       self.collectionView.reloadData()
     }
     
+    @IBAction func hoge(_ sender: Any) {
+        createNewAlbum()
+
+    }
+    
+
+    private func createNewAlbum(){
+        let alert:UIAlertController = UIAlertController(title:"新規アルバム",
+                                                        message: "",
+                                                        preferredStyle: UIAlertControllerStyle.alert)
+        
+        let cancelAction:UIAlertAction = UIAlertAction(title: "キャンセル",
+                                                       style: UIAlertActionStyle.cancel,
+                                                       handler:nil)
+        
+        let defaultAction:UIAlertAction = UIAlertAction(title: "作成",style: .default,handler:{
+                                                            (action:UIAlertAction!) -> Void in
+                                                            let title = alert.textFields?[0].text!
+                                                            self.creatingAlbumName = title!
+                                                            self.showImagePicker()
+                                                            
+        })
+        alert.addAction(cancelAction)
+        alert.addAction(defaultAction)
+        
+        //textfiledの追加
+        alert.addTextField(configurationHandler: {(textField:UITextField!) -> Void in
+            textField.text = "新規アルバム"
+        })
+
+        
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
+    
+    private func showImagePicker(){
+            let picker = ImagePickerViewController.instantiateFromStoryboard()
+            picker.type = .album
+            present(picker, animated: true, completion: nil)
+    }
     
     
 }
@@ -51,7 +93,7 @@ class AlbumViewController: UIViewController {
 extension AlbumViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 7
+        return Helper.albumdatas.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

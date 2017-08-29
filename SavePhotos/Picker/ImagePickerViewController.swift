@@ -63,12 +63,24 @@ class ImagePickerViewController: UIViewController {
             asset.append(AssetsInCamerRoll[i.row])
         }
         print(asset)
+        
         if self.type == .diary {
             let writeView = self.presentingViewController as! WriteViewController
             dismiss(animated: true, completion: {
                 writeView.assets = asset
             })
         
+        }else {
+            let present = self.presentingViewController as! HomeViewController
+            let navigation = present.viewControllers?.first as! UINavigationController
+            let albumView = navigation.topViewController as! AlbumViewController
+            print(albumView.creatingAlbumName)
+            let newAlbum = Album(Helper.creatingAlbumName)
+            Helper.albumdatas.append(newAlbum)
+            dismiss(animated: true, completion: {
+               albumView.reloadData()
+            })
+
         }
         
     }

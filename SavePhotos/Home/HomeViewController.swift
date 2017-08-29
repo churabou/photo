@@ -19,23 +19,6 @@ class HomeViewController: UITabBarController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-//        
-//        let topPageViewController = UINavigationController(rootViewController: HomeViewController())
-//        topPageViewController.tabBarItem = UITabBarItem(title: "ホーム", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
-//        
-//        let _storeViewController = StoreViewController()
-//        _storeViewController.title = "ストア"
-//        let storeViewController = UINavigationController(rootViewController: _storeViewController)
-//        storeViewController.tabBarItem = UITabBarItem(title: "ストア", image: UIImage(named: "book-multiple"), selectedImage: UIImage(named: "book-multiple"))
-//        
-//        let comicShelfViewController = UINavigationController(rootViewController: ComicShelfViewController.instantiateFromStoryboard())
-//        comicShelfViewController.title = "本棚"
-//        comicShelfViewController.tabBarItem = UITabBarItem(title: "本棚", image: UIImage(named: "view-list"), selectedImage: UIImage(named: "view-list"))
-//        
-//        let mypageViewController = UINavigationController(rootViewController: MypageViewController())
-//        mypageViewController.title = "マイページ"
-//        mypageViewController.tabBarItem = UITabBarItem(title: "マイページ", image: UIImage(named: "account"), selectedImage: UIImage(named: "account"))
-        
 
         
         let albumViewController = UINavigationController(rootViewController: AlbumViewController.instantiateFromStoryboard())

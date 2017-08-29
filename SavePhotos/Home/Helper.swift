@@ -13,4 +13,9 @@ class Helper {
     
     static var AssetsInCameraRoll:[PHAsset] = []
 
+    //新規アルバムを作成するとき、入力されたアルバムの名前を保持したい。
+    static var creatingAlbumName = ""
+    
+    static var albumdatas:[Album] = []
+    
 }
