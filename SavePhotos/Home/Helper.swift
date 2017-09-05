@@ -18,4 +18,29 @@ class Helper {
     
     static var albumdatas:[Album] = []
     
+    static let dataManager:DataManager = DataManager()
+    
+}
+
+
+class DataManager {
+    
+    var albums:[Dialy] = []
+    
+    func loadSampleData(){
+        addDiary()
+        addDiary()
+
+
+    }
+    
+    func addDiary(){
+        let d = Dialy()
+        d.title = "test"
+        let image = UIImage(named:"chura1")!
+        d.images.append(image)
+        d.images.append(image)
+        self.albums.append(d)
+    }
+
 }

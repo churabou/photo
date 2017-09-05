@@ -17,22 +17,15 @@ class PostViewController: UIViewController {
     
     var type:dialyDisplayType = .oneline
     
-    fileprivate var diaries:[Dialy] = []
-    
+    fileprivate var diaries:[Dialy] {
+        return Helper.dataManager.albums
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.cyan
         
-        let d = Dialy()
-        d.title = "test"
-        let image = UIImage(named:"chura1")!
-        d.images.append(image)
-        d.images.append(image)
-        
-        print(d.title)
-        print(d.images.count)
-        self.diaries.append(d)
+        Helper.dataManager.loadSampleData()
         self.tableView.reloadData()
         
     }
@@ -42,12 +35,16 @@ class PostViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    open func reloadData(){
+         self.tableView.reloadData()
+    }
+    
     @IBOutlet private weak var tableView: UITableView! {
     
         didSet{
             self.tableView.delegate = self
             self.tableView.dataSource = self
-            self.tableView.register(DialyTableViewCell.self)
+            self.tableView.register(DiaryTableViewCell.self)
         }
     }
     
@@ -77,8 +74,8 @@ extension PostViewController: UITableViewDataSource {
             return UITableViewCell()
             
         case .oneline:
-            let cell: DialyTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
-            cell.dialy = self.diaries[indexPath.row]
+            let cell: DiaryTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+            cell.diary = self.diaries[indexPath.row]
             return cell
             
         }

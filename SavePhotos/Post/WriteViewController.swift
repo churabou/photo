@@ -41,6 +41,16 @@ class WriteViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func post(_ sender: Any) {
+        let present = self.presentingViewController as! HomeViewController
+        let PostVC = present.viewControllers?[1] as! PostViewController
+        Helper.dataManager.addDiary()
+        
+        dismiss(animated: true, completion: {
+          PostVC.reloadData()
+        })
+    }
+
     
     
     func showImagePickerView(){
